@@ -9,7 +9,6 @@ class SpreadsheetConfig
   def read
     contents = []
     (2..@sheet.num_rows).each do |row|
-      p row
       items = []
       (2..@sheet.num_cols).each_with_index do |col, index|
         item = @sheet[row, col]
@@ -17,6 +16,6 @@ class SpreadsheetConfig
       end
       contents.push(items)
     end
-    p contents
+    contents
   end
 end
