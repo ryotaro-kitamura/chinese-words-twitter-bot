@@ -1,1 +1,4 @@
+# ENV
 /.env
+/config.json
+
