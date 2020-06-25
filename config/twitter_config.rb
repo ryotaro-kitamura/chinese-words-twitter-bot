@@ -1,4 +1,7 @@
 require "twitter"
+require "dotenv"
+
+Dotenv.load
 
 class TwitterConfig
   def initialize
