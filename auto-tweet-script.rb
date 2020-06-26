@@ -15,7 +15,7 @@ class AutoTweetScript
       p index
       tweet = "【生词】#{contents[index][0]}\n\n【拼音】#{contents[index][1]}\n【日文】#{contents[index][2]}"
       p tweet
-      @twitter.update("test")
+      @twitter.update(tweet)
       sleep 25
       p "done"
     rescue
